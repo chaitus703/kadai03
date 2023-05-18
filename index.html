@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <p><img id="image" src="img/p3.png" alt="冠の画像" class="purun"></p>
+    <div id="piano">
+        <div id="code_type">
+            <p><img id="image" src="img/p1.png" alt="目の画像" class="eye"></p>
+            <form name="code_types">
+            <dl>
+                <dd>
+                <label><input type="radio" id="code_R" name="code_type" value="ルート(R)" onchange="codeTypeSelect()" checked>(R)</label>
+                <label><input type="radio" id="code_M" name="code_type" value="メジャー(M)" onchange="codeTypeSelect()">(M)</label>
+                <label><input type="radio" id="code_m" name="code_type" value="マイナー(m)" onchange="codeTypeSelect()">m</label>
+                <label><input type="radio" id="code_dim" name="code_type" value="ディミニッシュ(dim)" onchange="codeTypeSelect()">dim</label>
+                <label><input type="radio" id="code_aug" name="code_type" value="オーギュメント(aug)" onchange="codeTypeSelect()">aug</label>
+                <label><input type="radio" id="code_sus4" name="code_type" value="サスペンデッド4th(sus4)" onchange="codeTypeSelect()">sus4</label>
+                <label><input type="radio" id="code_M7" name="code_type" value="メジャーセブンス(M7)" onchange="codeTypeSelect()">M7</label>
+                <label><input type="radio" id="code_7" name="code_type" value="セブンス(7)" onchange="codeTypeSelect()">7</label>
+                <label><input type="radio" id="code_mM7" name="code_type" value="マイナー・メジャー・セブンス(mM7)" onchange="codeTypeSelect()">mM7</label>
+                </dd> 
+            </dl>
+            <dl>
+                <dd>
+                <label><input type="radio" id="code_m7" name="code_type" value="マイナー・セブンス(m7)" onchange="codeTypeSelect()">m7</label>
+                <label><input type="radio" id="code_m7-5" name="code_type" value="マイナー・セブンス・フラット・ファイブ(m7(-5))" onchange="codeTypeSelect()">m7(-5)</label>
+                <label><input type="radio" id="code_dim7" name="code_type" value="ディミニッシュ・セブンス(dim7)" onchange="codeTypeSelect()">dim7</label>
+                <label><input type="radio" id="code_augM7" name="code_type" value="オーグメント・メジャー・セブンス(augM7)" onchange="codeTypeSelect()">augM7</label>
+                <label><input type="radio" id="code_aug7" name="code_type" value="オーギュメント・セブンス(aug7)" onchange="codeTypeSelect()">aug7</label>
+                <label><input type="radio" id="code_M7sus4" name="code_type" value="メジャー・セブンス・サスペンデッド4th(M7sus4)" onchange="codeTypeSelect()">M7sus4</label>
+                <label><input type="radio" id="code_7sus4" name="code_type" value="セブンス・サスペンデッド4th(7sus4)" onchange="codeTypeSelect()">7sus4</label>
+                <label><input type="radio" id="code_6" name="code_type" value="シックスス(6)" onchange="codeTypeSelect()">6</label>
+                <label><input type="radio" id="code_m6" name="code_type" value="マイナー・シックスス(m6)" onchange="codeTypeSelect()">m6</label>
+                </dd>
+            </dl>
+            </form>
+        </div>
+        <div id="display">
+            <p id="code_type_text"></p>
+            <p id="code_keys_text"></p>
+        </div>
+        <ul>
+            <li id="C4" class="w_key">C</li>
+            <li id="Cs4" class="b_key"></li> 
+            <li id="D4" class="w_key">D</li>
+            <li id="Ds4" class="b_key"></li> 
+            <li id="E4" class="w_key">E</li>
+            <li id="F4" class="w_key">F</li>
+            <li id="Fs4" class="b_key"></li>
+            <li id="G4" class="w_key">G</li>
+            <li id="Gs4" class="b_key"></li>
+            <li id="A4" class="w_key">A</li>
+            <li id="As4" class="b_key"></li>
+            <li id="B4" class="w_key">B</li>
+            <li id="C5" class="w_key">C</li>
+            
+            <li id="Cs5" class="b_key"></li> 
+            <li id="D5" class="w_key">D</li>
+            <li id="Ds5" class="b_key"></li> 
+            <li id="E5" class="w_key">E</li>
+            <li id="F5" class="w_key">F</li>
+            <li id="Fs5" class="b_key"></li>
+            <li id="G5" class="w_key">G</li>
+            <li id="Gs5" class="b_key"></li>
+            <li id="A5" class="w_key">A</li>
+            <li id="As5" class="b_key"></li>
+            <li id="B5" class="w_key">B</li>
+            <li id="C6" class="w_key">C</li>
+        </ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
